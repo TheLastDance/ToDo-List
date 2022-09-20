@@ -21,7 +21,7 @@ const todoSlice = createSlice({
                 return a;
             }
 
-            state.todos.push({
+            state.text !== '' && state.todos.push({
                 id: ids(),
                 text: state.text,
                 checked: false
@@ -39,7 +39,7 @@ const todoSlice = createSlice({
                     return a;
                 }
 
-                state.todos.push({
+                state.text !== '' && state.todos.push({
                     id: ids(),
                     text: state.text,
                     checked: false
